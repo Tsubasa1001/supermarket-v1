@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatosFacturaPedidoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_datosPedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="DATOS PEDIDO"
+            android:textSize="20dp"
+            android:layout_marginBottom="30dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_nombreFactura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre para la factura:"
+            />
+
+        <EditText
+            android:id="@+id/editText_nombreFactura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Nombre"
+            android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_nroNITFactura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nro NIT para la factura:"
+            android:layout_marginTop="30dp"
+            />
+
+        <EditText
+            android:id="@+id/editText_nit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="# NIT"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_formaPago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forma de pago:"
+            android:layout_marginTop="30dp"
+            />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/formaPago1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tarjeta de crédito" />
+
+
+            <RadioButton
+                android:id="@+id/formaPago2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PayPal" />
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+
+
+            <TextView
+                android:id="@+id/tv_montoTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Monto Total:"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_monto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="197,99bs"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_enviarPedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:text="Enviar pedido"
+            android:textColor="@android:color/white"
+            tools:layout_editor_absoluteX="271dp"
+            tools:layout_editor_absoluteY="473dp" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textViewNombreC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Licuadora"
+                android:layout_weight="0.9"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox_carrito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:gravity="right"
+                android:text="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewPrecioC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio: 50$"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textViewCantidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cantidad:"
+                android:layout_weight="0.0"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"/>
+
+
+            <EditText
+                android:id="@+id/editTextCantidad"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textViewDisponibilidadC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:gravity="right"
+                android:text="Disponible"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="16dp"
+                android:layout_weight="0.6"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
